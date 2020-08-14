@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # frozen_string_literal: true
-=======
-class LoginPage < SitePrism::Page
->>>>>>> addf3ba8cac6a6611a3eb6bb1f80605b614d81ad
 
+# Representa a página login
 class LoginPage < SitePrism::Page
   element  :btn_close_modal,    '.btn-close-modal'
   element  :modal_checkout,     '#checkoutAbandon'
