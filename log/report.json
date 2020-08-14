@@ -1,0 +1,120 @@
+[
+  {
+    "uri": "features/support/login.feature",
+    "id": "realizar-o-login",
+    "keyword": "Funcionalidade",
+    "name": "Realizar o login",
+    "description": "     Para que o cliente consiga acessar a minha conta\n     Sendo um cliente cadastrado no site\n     Desejo que o cliente consiga acessar suas reservas ",
+    "line": 4,
+    "comments": [
+      {
+        "value": "# frozen_string_literal: true",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "realizar-o-login;acessar-a-minha-conta",
+        "keyword": "Cenário",
+        "name": "Acessar a minha conta",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.18.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.18.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/pages/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7300
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o cliente tenha cadastro no site",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9297706000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "o cliente acessar seu cadastro com <email> e <senha>",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9751677700
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que o <pedido> está legível para solicitar o reembolso",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6383301400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/pages/hooks.rb:7"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "uninitialized constant Base\nDid you mean?  Base64 (NameError)\n./features/support/pages/hooks.rb:9:in `After'",
+              "duration": 365454900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.18.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2373203500
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
